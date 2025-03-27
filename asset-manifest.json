@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/wildlife-dashboard/static/css/main.0423eab0.css",
-    "main.js": "/wildlife-dashboard/static/js/main.ebfe64d6.js",
+    "main.css": "/wildlife-dashboard/static/css/main.7c2b93eb.css",
+    "main.js": "/wildlife-dashboard/static/js/main.86c1ee21.js",
     "index.html": "/wildlife-dashboard/index.html",
-    "main.0423eab0.css.map": "/wildlife-dashboard/static/css/main.0423eab0.css.map",
-    "main.ebfe64d6.js.map": "/wildlife-dashboard/static/js/main.ebfe64d6.js.map"
+    "main.7c2b93eb.css.map": "/wildlife-dashboard/static/css/main.7c2b93eb.css.map",
+    "main.86c1ee21.js.map": "/wildlife-dashboard/static/js/main.86c1ee21.js.map"
   },
   "entrypoints": [
-    "static/css/main.0423eab0.css",
-    "static/js/main.ebfe64d6.js"
+    "static/css/main.7c2b93eb.css",
+    "static/js/main.86c1ee21.js"
   ]
 }
