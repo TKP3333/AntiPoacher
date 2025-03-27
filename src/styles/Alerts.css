@@ -1,0 +1,98 @@
+.alerts-container {
+  width: 100%;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.no-alerts {
+  text-align: center;
+  color: green;
+  font-size: 16px;
+}
+
+.alert-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.alert-content {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.alert-time {
+  font-size: 12px;
+  color: #777;
+}
+
+.alert-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Color-coded alerts */
+.critical {
+  background: #ff4d4d;
+  color: white;
+  border-left: 5px solid #cc0000;
+  animation: blink 1s infinite alternate;
+}
+
+.warning {
+  background: #ffcc00;
+  color: black;
+  border-left: 5px solid #cc9900;
+}
+
+.safe {
+  background: #4caf50;
+  color: white;
+  border-left: 5px solid #2d7d2d;
+}
+
+/* Blinking animation for critical alerts */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* Button */
+.dismiss-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dismiss-btn:hover {
+  opacity: 0.7;
+}
+
+/* Animation effects */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}

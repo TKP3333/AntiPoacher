@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Dashboard from "./components/Dashboard";
+import SensorData from "./components/SensorData";
+import Charts from "./components/Charts";
+import Map from "./components/Map";
+import Alerts from "./components/Alerts";
+import "./styles/global.css"; // Import global styles
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <Navbar />
+        <div className="main-container">
+          {/* Left Section: Sensor Data & Charts */}
+          <div className="left-panel">
+            <SensorData />
+            <Charts />
+          </div>
+
+          {/* Right Section: Map & Alerts */}
+          <div className="right-panel">
+            <Map />
+            <Alerts />
+          </div>
+        </div>
+      </div>
+    </Router>
   );
 }
 

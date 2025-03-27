@@ -1,0 +1,41 @@
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* Two equal columns */
+  grid-template-rows: auto 1fr;    /* Alerts take auto height, bottom split */
+  gap: 20px;
+  padding: 20px;
+  height: 100vh;
+}
+
+/* Alerts on Top Left */
+.alerts-section {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+/* Map on Top Right */
+.map-section {
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+
+/* Bottom Left: Contains both Sensor Data & Charts (50% each) */
+.bottom-left-container {
+  grid-column: 1 / 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Sensor Data (50% Height) */
+.sensor-data-section {
+  flex: 1;
+  display: flex;
+}
+
+/* Charts (50% Height) */
+.charts-section {
+  flex: 1;
+  display: flex;
+}

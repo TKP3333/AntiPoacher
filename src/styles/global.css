@@ -1,0 +1,187 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #121212;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ✅ Labels (Green) - Except Table Headers & Map Labels */
+h1, h2, h3, h4, h5, h6, 
+label, .chart-label, .chartjs-title, .chartjs-label, 
+.chart-legend text, .chart-tooltip text {
+  color: #32CD32 !important;  /* Sustainable Green */
+  fill: #32CD32 !important;
+  font-weight: bold;
+}
+
+/* ✅ Table Headers (White) */
+.sensor-data-table th {
+  background-color: #292929;
+  color: white !important;
+  font-weight: bold;
+}
+
+/* ✅ Keep Normal Text White */
+p, span, td, text, .normal-text {
+  color: white !important;
+}
+
+/* ✅ Map Labels (Black) */
+.map-container .map-label {
+  color: black !important;
+  fill: black !important;
+  font-weight: bold;
+}
+
+/* ✅ Map Zoom Buttons (Black) */
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid white !important;
+}
+
+.leaflet-control-zoom-in:hover,
+.leaflet-control-zoom-out:hover {
+  background-color: #333 !important;
+}
+
+/* App Container */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* ✅ Dashboard Layout */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* ✅ Left Panel: Alerts on Top, Sensor Data at Bottom */
+.left-panel {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Alerts at the Top-Left */
+.alerts-section {
+  width: 100%;
+}
+
+/* Bottom Left: Sensor Data */
+.bottom-left {
+  width: 100%;
+  flex: 1;
+}
+
+/* ✅ Right Panel (Map) */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ✅ Bottom Section: Sensor Data (50%) | Charts (50%) */
+.bottom-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+.sensor-data-half {
+  flex: 1;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.charts-half {
+  flex: 1;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* ✅ Sensor Data Table */
+.sensor-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sensor-data-table td {  /* White Data */
+  color: white !important;
+}
+
+/* ✅ Charts Styling */
+.chart-container {
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-container canvas {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+/* ✅ Alerts Section */
+.alert-box {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.alert-danger {
+  background-color: #ff4d4d;
+  color: white !important;
+}
+
+.alert-warning {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.alert-success {
+  background-color: #28a745;
+  color: white !important;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  animation: fadeIn 0.8s ease-in-out;
+}
