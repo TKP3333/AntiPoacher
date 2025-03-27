@@ -15,15 +15,15 @@ function App() {
         <Navbar />
         <div className="main-container">
           {/* Left Section: Sensor Data & Charts */}
-          <div className="left-panel">
-            <SensorData />
-            <Charts />
+          <div className="right-panel">
+            <Alerts />
+	    <Map />
           </div>
 
           {/* Right Section: Map & Alerts */}
-          <div className="right-panel">
-            <Map />
-            <Alerts />
+          <div className="left-panel">
+            <SensorData />
+            <Charts />
           </div>
         </div>
       </div>
