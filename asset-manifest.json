@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wildlife-dashboard/static/css/main.0423eab0.css",
+    "main.js": "/wildlife-dashboard/static/js/main.33d7618d.js",
+    "index.html": "/wildlife-dashboard/index.html",
+    "main.0423eab0.css.map": "/wildlife-dashboard/static/css/main.0423eab0.css.map",
+    "main.33d7618d.js.map": "/wildlife-dashboard/static/js/main.33d7618d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0423eab0.css",
+    "static/js/main.33d7618d.js"
+  ]
+}
