@@ -4,9 +4,9 @@ import { FaExclamationTriangle, FaCheckCircle, FaTimesCircle } from "react-icons
 
 const Alerts = () => {
   const [alerts, setAlerts] = useState([
-    { id: 1, type: "critical", message: "Poaching activity detected near Zone 5!", time: "2 mins ago" },
-    { id: 2, type: "warning", message: "Unusual movement detected near water source.", time: "10 mins ago" },
-    { id: 3, type: "safe", message: "All sensors operating normally.", time: "30 mins ago" },
+    { id: 1, type: "critical", message: "Sound Detected, Time: 12:39 PM, Severity: High-Risk" },
+    { id: 2, type: "warning", message: "Motion Detected Time, Time: 12:37 PM, Severity: Suspicious" },
+    { id: 3, type: "safe", message: "Animal Movement, Time: 12:35 PM, Severity: Normal" },
   ]);
 
   const dismissAlert = (id) => {
