@@ -6,6 +6,7 @@ import SensorData from "./components/SensorData";
 import Charts from "./components/Charts";
 import Map from "./components/Map";
 import Alerts from "./components/Alerts";
+import Footer from "./components/Footer"; // ✅ Import Footer
 import "./styles/global.css"; // Import global styles
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
           {/* Left Section: Sensor Data & Charts */}
           <div className="left-panel">
             <Alerts />
-	    <SensorData />
+            <SensorData />
           </div>
 
           {/* Right Section: Map & Alerts */}
@@ -26,6 +27,7 @@ function App() {
             <Charts />
           </div>
         </div>
+        <Footer /> {/* ✅ Footer Added Here */}
       </div>
     </Router>
   );
